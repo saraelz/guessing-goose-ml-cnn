@@ -1,0 +1,22 @@
+.drawing-container {
+    display: flex;
+    justify-content: center;
+}
+
+.drawing-pad {
+    border: 1px black solid;
+	border-radius: 30px 4px 30% 6px / 8px 10px 5px 30px;
+}
+
+.drawing-pad canvas {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.canvas-overlay {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: black;
+}

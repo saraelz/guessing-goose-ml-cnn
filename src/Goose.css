@@ -1,0 +1,16 @@
+img.gg {
+    border-radius: 50%;
+    border: black 2px solid;
+
+    margin:auto;
+    object-fit: contain;
+    background-color: white;
+    width: 15em;
+    height: 15em;
+}
+
+figure.gg {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 2em;
+}
