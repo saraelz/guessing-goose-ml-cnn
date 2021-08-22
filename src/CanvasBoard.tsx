@@ -26,10 +26,10 @@ export default function CanvasBoard(props: CanvasBoardProps) {
             <div className="drawing-container">
                 <CanvasDraw
                     className="drawing-pad"
-                    brushRadius={3}
-                    lazyRadius={1}
+                    brushRadius={4}
+                    lazyRadius={4}
                     hideGrid={true}
-                    canvasWidth={window.innerWidth - 50}
+                    canvasWidth={"40em"}
                     canvasHeight={"10em"}
                     ref={canvasDrawEl}
                     disabled={props.disabled}
@@ -38,7 +38,7 @@ export default function CanvasBoard(props: CanvasBoardProps) {
             {!props.hidden && (
                 <div className="button-choices">
                     <button className="guess-button btn btn-2 btn-2h" onClick={clearCanvas} disabled={props.disabled}>clear</button>
-                    <button className="guess-button btn btn-2 btn-2h" onClick={submitCanvas} disabled={props.disabled}>Guess Word</button>
+                    <button className="guess-button btn btn-2 btn-2h" onClick={submitCanvas} disabled={props.disabled}>Guess Number</button>
                 </div>
             )}
         </section>

@@ -2,7 +2,11 @@ import React, {useEffect, useState} from 'react';
 import './App.css';
 import {GooseState, GuessingGoose} from "./Goose";
 import CanvasBoard from "./CanvasBoard";
-import wordGuesser from "./wordGuesser";
+import * as tf from "@tensorflow/tfjs";
+// eslint-disable-next-line import/no-webpack-loader-syntax
+// import createDigitGuesser from "workerize-loader!./deepLearning/digitGuesser";
+import * as DigitGuesser from "./deepLearning/digitGuesser";
+
 
 enum AppState {
     DRAWING,
@@ -13,6 +17,10 @@ enum AppState {
 }
 
 const RESET_DELAY_MS = 3000;
+
+
+// const deepWorker = createDigitGuesser<typeof DigitGuesser>();
+const deepWorker = DigitGuesser;
 
 function App() {
     const [appState, setAppState] = useState<AppState>(AppState.DRAWING);
@@ -26,15 +34,17 @@ function App() {
         return GooseState.IDLE;
     };
 
-    const onQueryCallback = async (canvas: string) => {
+    const onQueryCallback = async (canvasInfo: string) => {
         setAppState(AppState.THINKING);
-        const str = await wordGuesser(canvas);
+        const canvas = document.getElementsByTagName('canvas')[1] as HTMLCanvasElement;
+        // const canvasImg = await .array();
+        const outputDigits = await deepWorker.guessDigits(canvasInfo, tf.browser.fromPixels(canvas, 3));
         setAppState(AppState.CHECKING);
-        setCheckString(str);
+        setCheckString(outputDigits);
     };
 
     useEffect(() => {
-        if (appState) {
+        if (appState === AppState.APOLOGY || appState === AppState.HAPPY) {
             let timer = setTimeout(() => setAppState(AppState.DRAWING), RESET_DELAY_MS);
             return () => {
                 clearTimeout(timer);
@@ -50,7 +60,7 @@ function App() {
                 <div className="check-div">
                     {
                         appState === AppState.CHECKING &&
-                        <span className="check">Does that say <span className="bold">"{checkString}"</span>?</span>
+                        <span className="check">Is that <span className="bold">"{checkString}"</span>?</span>
                     }
                     {
                         appState === AppState.APOLOGY &&
@@ -68,7 +78,7 @@ function App() {
     return (
         <div className="App">
             <header className="App-header">
-                <h1>Guessing Goose</h1>
+                <h1>Number Guessing Goose</h1>
             </header>
             <GuessingGoose gooseState={getGooseState()}/>
             <CanvasBoard
@@ -76,6 +86,7 @@ function App() {
                 disabled={appState === AppState.THINKING}
                 hidden={[AppState.CHECKING, AppState.HAPPY, AppState.APOLOGY].indexOf(appState) >= 0}/>
             {maybeRenderCheckingDialog()}
+            {/*<canvas id="debug"/>*/}
         </div>
     );
 }
