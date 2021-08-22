@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/guessing-goose/static/css/main.76b4509f.chunk.css",
+    "main.js": "/guessing-goose/static/js/main.61d203d5.chunk.js",
+    "main.js.map": "/guessing-goose/static/js/main.61d203d5.chunk.js.map",
+    "runtime-main.js": "/guessing-goose/static/js/runtime-main.0ec7969a.js",
+    "runtime-main.js.map": "/guessing-goose/static/js/runtime-main.0ec7969a.js.map",
+    "static/js/2.e57ea4e2.chunk.js": "/guessing-goose/static/js/2.e57ea4e2.chunk.js",
+    "static/js/2.e57ea4e2.chunk.js.map": "/guessing-goose/static/js/2.e57ea4e2.chunk.js.map",
+    "static/js/3.86f36c7c.chunk.js": "/guessing-goose/static/js/3.86f36c7c.chunk.js",
+    "static/js/3.86f36c7c.chunk.js.map": "/guessing-goose/static/js/3.86f36c7c.chunk.js.map",
+    "1e552d4d2040de74dce4.worker.js": "/guessing-goose/1e552d4d2040de74dce4.worker.js",
+    "1e552d4d2040de74dce4.worker.js.LICENSE.txt": "/guessing-goose/1e552d4d2040de74dce4.worker.js.LICENSE.txt",
+    "1e552d4d2040de74dce4.worker.js.map": "/guessing-goose/1e552d4d2040de74dce4.worker.js.map",
+    "index.html": "/guessing-goose/index.html",
+    "static/css/main.76b4509f.chunk.css.map": "/guessing-goose/static/css/main.76b4509f.chunk.css.map",
+    "static/js/2.e57ea4e2.chunk.js.LICENSE.txt": "/guessing-goose/static/js/2.e57ea4e2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0ec7969a.js",
+    "static/js/2.e57ea4e2.chunk.js",
+    "static/css/main.76b4509f.chunk.css",
+    "static/js/main.61d203d5.chunk.js"
+  ]
+}
