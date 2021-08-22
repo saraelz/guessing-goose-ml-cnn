@@ -64,15 +64,13 @@ let model: tf.GraphModel | undefined;
 //     }
 // }
 
-export async function guessDigits(canvasString: string, canvasImg: tf.Tensor3D) {
+export async function guessDigits(canvasString: string, canvasImg: number[][][]) {
     if (!model) {
         model = await tf.loadGraphModel('/model.json');
     }
-    const neuralNetworkImg2D = imagesFromCanvas(canvasString, canvasImg).map(preprocess);
+    const neuralNetworkImg2D = imagesFromCanvas(canvasString, tf.tensor3d(canvasImg)).map(preprocess);
     const neuralNetworkImg3D = neuralNetworkImg2D.map(t => t.expandDims(-1)); // convert 28x28 -> 28x28x1
     const neuralNetworkImg4D = tf.stack(neuralNetworkImg3D);
-    const hmm = await neuralNetworkImg4D.array();
-    console.log(JSON.stringify(hmm));
     const predictionProbs = await model.predict(neuralNetworkImg4D) as tf.Tensor2D;
     const predictions = await predictionProbs.argMax(1).array() as number[];
     return predictions.join('');

@@ -4,7 +4,7 @@ import {GooseState, GuessingGoose} from "./Goose";
 import CanvasBoard from "./CanvasBoard";
 import * as tf from "@tensorflow/tfjs";
 // eslint-disable-next-line import/no-webpack-loader-syntax
-// import createDigitGuesser from "workerize-loader!./deepLearning/digitGuesser";
+import createDigitGuesser from "workerize-loader!./deepLearning/digitGuesser";
 import * as DigitGuesser from "./deepLearning/digitGuesser";
 
 
@@ -19,8 +19,8 @@ enum AppState {
 const RESET_DELAY_MS = 3000;
 
 
-// const deepWorker = createDigitGuesser<typeof DigitGuesser>();
-const deepWorker = DigitGuesser;
+const deepWorker = createDigitGuesser<typeof DigitGuesser>();
+// const deepWorker = DigitGuesser;
 
 function App() {
     const [appState, setAppState] = useState<AppState>(AppState.DRAWING);
@@ -37,8 +37,8 @@ function App() {
     const onQueryCallback = async (canvasInfo: string) => {
         setAppState(AppState.THINKING);
         const canvas = document.getElementsByTagName('canvas')[1] as HTMLCanvasElement;
-        // const canvasImg = await .array();
-        const outputDigits = await deepWorker.guessDigits(canvasInfo, tf.browser.fromPixels(canvas, 3));
+        const canvasImg = await tf.browser.fromPixels(canvas, 3).array();
+        const outputDigits = await deepWorker.guessDigits(canvasInfo, canvasImg);
         setAppState(AppState.CHECKING);
         setCheckString(outputDigits);
     };
