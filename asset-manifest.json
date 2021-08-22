@@ -1,25 +1,28 @@
 {
   "files": {
     "main.css": "/guessing-goose/static/css/main.76b4509f.chunk.css",
-    "main.js": "/guessing-goose/static/js/main.0166e0fd.chunk.js",
-    "main.js.map": "/guessing-goose/static/js/main.0166e0fd.chunk.js.map",
+    "main.js": "/guessing-goose/static/js/main.877c9d61.chunk.js",
+    "main.js.map": "/guessing-goose/static/js/main.877c9d61.chunk.js.map",
     "runtime-main.js": "/guessing-goose/static/js/runtime-main.0ec7969a.js",
     "runtime-main.js.map": "/guessing-goose/static/js/runtime-main.0ec7969a.js.map",
     "static/js/2.e57ea4e2.chunk.js": "/guessing-goose/static/js/2.e57ea4e2.chunk.js",
     "static/js/2.e57ea4e2.chunk.js.map": "/guessing-goose/static/js/2.e57ea4e2.chunk.js.map",
     "static/js/3.86f36c7c.chunk.js": "/guessing-goose/static/js/3.86f36c7c.chunk.js",
     "static/js/3.86f36c7c.chunk.js.map": "/guessing-goose/static/js/3.86f36c7c.chunk.js.map",
-    "ad1c35c8973583266b2c.worker.js": "/guessing-goose/ad1c35c8973583266b2c.worker.js",
-    "ad1c35c8973583266b2c.worker.js.LICENSE.txt": "/guessing-goose/ad1c35c8973583266b2c.worker.js.LICENSE.txt",
-    "ad1c35c8973583266b2c.worker.js.map": "/guessing-goose/ad1c35c8973583266b2c.worker.js.map",
+    "f5cf482be2ffa85c234b.worker.js": "/guessing-goose/f5cf482be2ffa85c234b.worker.js",
+    "f5cf482be2ffa85c234b.worker.js.LICENSE.txt": "/guessing-goose/f5cf482be2ffa85c234b.worker.js.LICENSE.txt",
+    "f5cf482be2ffa85c234b.worker.js.map": "/guessing-goose/f5cf482be2ffa85c234b.worker.js.map",
     "index.html": "/guessing-goose/index.html",
     "static/css/main.76b4509f.chunk.css.map": "/guessing-goose/static/css/main.76b4509f.chunk.css.map",
-    "static/js/2.e57ea4e2.chunk.js.LICENSE.txt": "/guessing-goose/static/js/2.e57ea4e2.chunk.js.LICENSE.txt"
+    "static/js/2.e57ea4e2.chunk.js.LICENSE.txt": "/guessing-goose/static/js/2.e57ea4e2.chunk.js.LICENSE.txt",
+    "static/media/gg-happy-cropped-more.dc80ce54.png": "/guessing-goose/static/media/gg-happy-cropped-more.dc80ce54.png",
+    "static/media/gg-idle-cropped.a67edaa9.png": "/guessing-goose/static/media/gg-idle-cropped.a67edaa9.png",
+    "static/media/gg-investigative-cropped.542e9fef.png": "/guessing-goose/static/media/gg-investigative-cropped.542e9fef.png"
   },
   "entrypoints": [
     "static/js/runtime-main.0ec7969a.js",
     "static/js/2.e57ea4e2.chunk.js",
     "static/css/main.76b4509f.chunk.css",
-    "static/js/main.0166e0fd.chunk.js"
+    "static/js/main.877c9d61.chunk.js"
   ]
 }
