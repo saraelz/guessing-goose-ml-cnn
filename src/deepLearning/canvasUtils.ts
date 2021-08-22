@@ -20,7 +20,7 @@ export class Rect {
 
     private overlap(startA: number, startB: number, endA: number, endB: number) {
         if ((startA <= endB) && (endA >= startB)) {
-            return Math.max(endB - startA, endA - startB);
+            return Math.min(Math.abs(endB - startA), Math.abs(endA - startB));
         }
         return null;
     }
@@ -34,7 +34,7 @@ export class Rect {
     }
 
     intersects(other: Rect) {
-        return this.overlapY(other) !== null && this.overlapX(other) !== null;
+        return this.overlapY(other) && this.overlapX(other);
     }
 
     public static combine(rects: Rect[]) {
@@ -85,6 +85,8 @@ function getCanvasCoordsBounds(line: CanvasCoordsLine) {
     return new Rect(Math.floor(minX), Math.floor(minY), Math.ceil(maxX), Math.ceil(maxY));
 }
 
+const OVERLAP_THRESHOLD = .5;
+
 function shouldBePaired(rectA: Rect, segmentsA: Segment[], rectB: Rect, segmentsB: Segment[]): boolean {
     if (rectA.intersects(rectB)) {
         for (let sa of segmentsA) {
@@ -95,6 +97,13 @@ function shouldBePaired(rectA: Rect, segmentsA: Segment[], rectB: Rect, segments
                 }
             }
         }
+    }
+    const overlapX = rectA.overlapX(rectB);
+    if (!overlapX)
+        return false;
+    const overlapRatio = Math.max(overlapX / (rectA.maxX - rectA.minX), overlapX / (rectB.maxX - rectB.minX));
+    if (overlapRatio > OVERLAP_THRESHOLD) {
+        return true;
     }
     return false;
 }
