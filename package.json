@@ -2,6 +2,7 @@
   "name": "guessing-goose-frontend",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://aelzeiny.github.io/guessing-goose",
   "dependencies": {
     "@tensorflow/tfjs": "^3.8.0",
     "@testing-library/jest-dom": "^5.14.1",
@@ -24,7 +25,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -45,6 +48,7 @@
     ]
   },
   "devDependencies": {
-    "@types/react-canvas-draw": "^1.1.1"
+    "@types/react-canvas-draw": "^1.1.1",
+    "gh-pages": "^3.2.3"
   }
 }

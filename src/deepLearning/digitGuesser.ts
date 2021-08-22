@@ -64,9 +64,11 @@ let model: tf.GraphModel | undefined;
 //     }
 // }
 
+const MODEL_PATH = 'https://raw.githubusercontent.com/aelzeiny/guessing-goose/main/public/model.json';
+
 export async function guessDigits(canvasString: string, canvasImg: number[][][]) {
     if (!model) {
-        model = await tf.loadGraphModel('/model.json');
+        model = await tf.loadGraphModel(MODEL_PATH);
     }
     const neuralNetworkImg2D = imagesFromCanvas(canvasString, tf.tensor3d(canvasImg)).map(preprocess);
     const neuralNetworkImg3D = neuralNetworkImg2D.map(t => t.expandDims(-1)); // convert 28x28 -> 28x28x1
