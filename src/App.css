@@ -4,6 +4,7 @@ body {
 	background-color: #e0e0d8;
 	/*font-family: 'Arvo', serif;*/
 	font-family: 'Amatic SC', cursive;
+	text-align: center;
 }
 
 .App {
@@ -37,6 +38,12 @@ h1 {
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
+}
+
+@media only screen and (max-width: 600px) {
+  .btn {
+	  padding: 25px 25px;
+  }
 }
 
 .btn:after {

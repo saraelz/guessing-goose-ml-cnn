@@ -27,7 +27,7 @@ export default function CanvasBoard(props: CanvasBoardProps) {
                 <CanvasDraw
                     className="drawing-pad"
                     brushRadius={4}
-                    lazyRadius={4}
+                    lazyRadius={3}
                     hideGrid={true}
                     canvasWidth={"40em"}
                     canvasHeight={"10em"}

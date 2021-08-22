@@ -79,6 +79,7 @@ function App() {
         <div className="App">
             <header className="App-header">
                 <h1>Number Guessing Goose</h1>
+                <h4>By Sara Elzeiny</h4>
             </header>
             <GuessingGoose gooseState={getGooseState()}/>
             <CanvasBoard
