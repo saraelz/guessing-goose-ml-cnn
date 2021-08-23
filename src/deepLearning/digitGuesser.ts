@@ -64,7 +64,7 @@ let model: tf.GraphModel | undefined;
 //     }
 // }
 
-const MODEL_PATH = 'https://raw.githubusercontent.com/aelzeiny/guessing-goose/main/public/model.json';
+const MODEL_PATH = 'https://raw.githubusercontent.com/saraelz/guessing-goose-ml-cnn/main/public/model.json';
 
 export async function guessDigits(canvasString: string, canvasImg: number[][][]) {
     if (!model) {
