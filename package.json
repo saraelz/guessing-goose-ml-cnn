@@ -2,7 +2,7 @@
   "name": "guessing-goose-frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://aelzeiny.github.io/guessing-goose",
+  "homepage": "http://saraelz.github.io/guessing-goose",
   "dependencies": {
     "@tensorflow/tfjs": "^3.8.0",
     "@testing-library/jest-dom": "^5.14.1",
