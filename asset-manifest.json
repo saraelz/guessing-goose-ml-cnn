@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/guessing-goose/static/css/main.76b4509f.chunk.css",
-    "main.js": "/guessing-goose/static/js/main.4e0732ad.chunk.js",
-    "main.js.map": "/guessing-goose/static/js/main.4e0732ad.chunk.js.map",
-    "runtime-main.js": "/guessing-goose/static/js/runtime-main.0ec7969a.js",
-    "runtime-main.js.map": "/guessing-goose/static/js/runtime-main.0ec7969a.js.map",
-    "static/js/2.e57ea4e2.chunk.js": "/guessing-goose/static/js/2.e57ea4e2.chunk.js",
-    "static/js/2.e57ea4e2.chunk.js.map": "/guessing-goose/static/js/2.e57ea4e2.chunk.js.map",
-    "static/js/3.86f36c7c.chunk.js": "/guessing-goose/static/js/3.86f36c7c.chunk.js",
-    "static/js/3.86f36c7c.chunk.js.map": "/guessing-goose/static/js/3.86f36c7c.chunk.js.map",
-    "37a5cee1a26af4cfff9c.worker.js": "/guessing-goose/37a5cee1a26af4cfff9c.worker.js",
-    "37a5cee1a26af4cfff9c.worker.js.LICENSE.txt": "/guessing-goose/37a5cee1a26af4cfff9c.worker.js.LICENSE.txt",
-    "37a5cee1a26af4cfff9c.worker.js.map": "/guessing-goose/37a5cee1a26af4cfff9c.worker.js.map",
-    "index.html": "/guessing-goose/index.html",
-    "static/css/main.76b4509f.chunk.css.map": "/guessing-goose/static/css/main.76b4509f.chunk.css.map",
-    "static/js/2.e57ea4e2.chunk.js.LICENSE.txt": "/guessing-goose/static/js/2.e57ea4e2.chunk.js.LICENSE.txt",
-    "static/media/gg-happy-cropped-more.dc80ce54.png": "/guessing-goose/static/media/gg-happy-cropped-more.dc80ce54.png",
-    "static/media/gg-idle-cropped.a67edaa9.png": "/guessing-goose/static/media/gg-idle-cropped.a67edaa9.png",
-    "static/media/gg-investigative-cropped.542e9fef.png": "/guessing-goose/static/media/gg-investigative-cropped.542e9fef.png"
+    "main.css": "/guessing-goose-ml-cnn/static/css/main.76b4509f.chunk.css",
+    "main.js": "/guessing-goose-ml-cnn/static/js/main.a4077732.chunk.js",
+    "main.js.map": "/guessing-goose-ml-cnn/static/js/main.a4077732.chunk.js.map",
+    "runtime-main.js": "/guessing-goose-ml-cnn/static/js/runtime-main.97717a88.js",
+    "runtime-main.js.map": "/guessing-goose-ml-cnn/static/js/runtime-main.97717a88.js.map",
+    "static/js/2.e57ea4e2.chunk.js": "/guessing-goose-ml-cnn/static/js/2.e57ea4e2.chunk.js",
+    "static/js/2.e57ea4e2.chunk.js.map": "/guessing-goose-ml-cnn/static/js/2.e57ea4e2.chunk.js.map",
+    "static/js/3.86f36c7c.chunk.js": "/guessing-goose-ml-cnn/static/js/3.86f36c7c.chunk.js",
+    "static/js/3.86f36c7c.chunk.js.map": "/guessing-goose-ml-cnn/static/js/3.86f36c7c.chunk.js.map",
+    "c685ff039b228ade9cdd.worker.js": "/guessing-goose-ml-cnn/c685ff039b228ade9cdd.worker.js",
+    "c685ff039b228ade9cdd.worker.js.LICENSE.txt": "/guessing-goose-ml-cnn/c685ff039b228ade9cdd.worker.js.LICENSE.txt",
+    "c685ff039b228ade9cdd.worker.js.map": "/guessing-goose-ml-cnn/c685ff039b228ade9cdd.worker.js.map",
+    "index.html": "/guessing-goose-ml-cnn/index.html",
+    "static/css/main.76b4509f.chunk.css.map": "/guessing-goose-ml-cnn/static/css/main.76b4509f.chunk.css.map",
+    "static/js/2.e57ea4e2.chunk.js.LICENSE.txt": "/guessing-goose-ml-cnn/static/js/2.e57ea4e2.chunk.js.LICENSE.txt",
+    "static/media/gg-happy-cropped-more.dc80ce54.png": "/guessing-goose-ml-cnn/static/media/gg-happy-cropped-more.dc80ce54.png",
+    "static/media/gg-idle-cropped.a67edaa9.png": "/guessing-goose-ml-cnn/static/media/gg-idle-cropped.a67edaa9.png",
+    "static/media/gg-investigative-cropped.542e9fef.png": "/guessing-goose-ml-cnn/static/media/gg-investigative-cropped.542e9fef.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.0ec7969a.js",
+    "static/js/runtime-main.97717a88.js",
     "static/js/2.e57ea4e2.chunk.js",
     "static/css/main.76b4509f.chunk.css",
-    "static/js/main.4e0732ad.chunk.js"
+    "static/js/main.a4077732.chunk.js"
   ]
 }
