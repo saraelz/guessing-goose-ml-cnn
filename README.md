@@ -14,3 +14,5 @@ was train in `Python` using `Keras`, then exported to Tensorflow.
 ### Front-end
 Written in React + Typescript. In order to make the website responsive,
 all ML processing runs in the background with service-workers.
+
+Check it out here: https://saraelz.github.io/guessing-goose-ml-cnn/
